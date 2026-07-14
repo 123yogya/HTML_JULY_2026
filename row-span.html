@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+
+<body>
+    <table border="2"> //First step - Give the border
+        <thead> //Second step - Table Head
+            <tr>   //Third step - Give Table row
+                <th>Type</th> //Fourth - Give Table heading
+                <th>Languages</th>
+            </tr>
+        </thead> //Fifth step - Close table head
+        <tbody> //Six step - Give Table body
+            <tr> //Seven step - Take new table row If one row is completed
+                <th rowspan="4">Frontend</th> //Eight step - Decide how many we wants rowspan
+                <td>HTML</td>
+            </tr>
+            <tr> //If the columns are just two take new row otherwise colspan does not work properly
+                <td>JS</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+            </tr>
+            <tr>
+                <td>Bootstrap</td>
+            </tr>
+            <tr>
+                <th rowspan="3">Backend</th>
+                <td>Core Java</td>
+            </tr>
+            <tr>
+                <td>Advanced Java</td>
+            </tr>
+            <tr>
+                <td>Spring Boot</td>
+            </tr>
+            <tr>
+                <th>Database</th>
+                <td>My SQL</td>
+            </tr>
+        </tbody> //Close table body
+    </table> //Close Table
+</body>
+</html>
